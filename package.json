@@ -4,8 +4,12 @@
   "description": "A web application to manage being a roomate at the Windsor Woods 9205 apartment",
   "main": "app.js",
   "scripts": {
+    "build": "npm run clean && npm run tsc && npm run build:client",
+    "build:client": "cd ./client && npm run build && cp build/* ../build -rf && rm -rf build",
+    "clean": "rm -rf build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "start": "npm run build && node ./build/app.js"
   },
   "author": "Panayiotis Dimopoulos",
   "license": "ISC",
