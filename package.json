@@ -1,0 +1,22 @@
+{
+  "name": "the-9205",
+  "version": "1.0.0",
+  "description": "A web application to manage being a roomate at the Windsor Woods 9205 apartment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "author": "Panayiotis Dimopoulos",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "typeorm": "^0.2.38"
+  }
+}
